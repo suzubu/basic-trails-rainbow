@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  cursor: none;
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* Animated background gradient */
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+h1 {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+  pointer-events: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 3vw;
+}
+
+/* The animated trail elements */
+.trail {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  pointer-events: none;
+
+  /* default gradient + glow, overridden in JS */
+  background: radial-gradient(circle, #ffffff, transparent 60%);
+  filter: drop-shadow(0 0 10px white);
+
+  mix-blend-mode: lighten; /* softens overlap and blends better */
+  will-change: transform, opacity; /* performance hint */
+}
+
+/* Background animation keyframes */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
