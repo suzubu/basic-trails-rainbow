@@ -1,4 +1,4 @@
-# 🌈 Basic Trails - Rainbow
+# 🌈 Basic Trails Effect - Rainbow
 
 > A mouse trail effect with colorful animated circles that drift, rotate, and fade — enhanced by a shifting background gradient.
 
@@ -19,7 +19,7 @@ This project is built with plain HTML, CSS, and JavaScript using the GSAP librar
 
 ```bash
 # 1. Clone this repo
-git clone https://github.com/suzubu/basic-trails-rainbow.git
+git clone https://github.com/suzubu/basic-trails-rainbow-effect.git
 
 # 2. Open the HTML file in your browser
 open Trails.html
