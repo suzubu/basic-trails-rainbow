@@ -94,4 +94,4 @@ MIT — use, remix, enjoy!
 
 ## 🙋‍♀️ Author
 
-Built with ❤️ by [suzubu](https://github.com/suzubu)
+Made with ☕ + 🎧 by [suzubu](https://github.com/suzubu)
